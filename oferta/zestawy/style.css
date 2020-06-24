@@ -280,11 +280,17 @@ html, body{
 }
 .gain-h1{
   display:inline-block;
+}
+.gain-h1 h1{
   font-weight:bold;
-  color:hsl(226, 100%, 20%);
-  background: -webkit-linear-gradient(hsl(226, 100%, 20%) 40%, hsl(226, 100%, 70%));
+  background-color: blue;
+  background-image:linear-gradient(hsl(226, 100%, 20%) 40%, hsl(226, 100%, 70%));
+  background-size:100%;
+  background-repeat:no-repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 .gain-description{
   position:relative;
@@ -482,6 +488,7 @@ footer{
   .reason-why-ul{
     width:100%;
     text-align:left;
+    margin:10px 0px;
   }
   .reason-why-img{
     text-align: center;
