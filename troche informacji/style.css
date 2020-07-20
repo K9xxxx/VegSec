@@ -1,0 +1,668 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+html, body{
+  background-color: hsl(0,0%,90%);
+}
+.logo-desk{
+  display:inline-block;
+  position:relative;
+  text-align:left;
+  font-size:40px;
+  padding-bottom:30px;
+  padding-top:10px;
+}
+.logo-desk h1{
+  margin-left:100px;
+}
+.social-things{
+  font-family: 'Noto Sans', sans-serif;
+  width:100%;
+  height:35px;
+  background-color: hsl(0,0%,77%);
+}
+.contact-things div{
+  float:right;
+  padding-top:5px;
+}
+.contact-things div >a{
+  margin-right:20px;
+  font-size:20px;
+  color:hsl(0, 0%, 0%);
+  font-weight: 700;
+  text-decoration: none;
+}
+.contact-things div>a:hover{
+  color:hsl(226, 100%, 20%);
+  transition:color 1s
+}
+.contact-things div> i{
+  font-size:25px;
+  color:hsl(0,0%,30%);
+}
+.contact-things div .icofont-facebook{
+  color: hsl(221, 44%, 41%);
+}
+.nav-bar-mb{
+  display:none
+}
+.nav-bar-desk{
+  margin-top:20px;
+  text-align: center;
+  background: linear-gradient(to bottom, hsl(218, 100%, 40%),hsl(226, 100%, 20%));
+  height:44px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 400;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+.nav-bar-desk ul{
+  display:inline-block;
+  list-style-type:none;
+}
+.nav-bar-desk ul>li:hover{
+  animation:nav-bar-hover 0.6s forwards;
+}
+.nav-bar-desk ul>li:hover a{
+  color:white;
+}
+@keyframes nav-bar-hover {
+  100%{
+    background: linear-gradienthsl(236, 100%, 38%);
+  }
+}
+.nav-bar-desk ul>li{
+  padding:5px 40px;
+  border-left:1px solid hsl(0,0%,90%);
+  border-right:1px solid hsl(0,0%,90%);
+  float:left;
+  text-decoration: none;
+}
+.nav-bar-desk ul li>a{
+  font-size:25px;
+  color:hsl(0,0%,80%);
+  text-decoration: none;
+}
+.all-content{
+  position:relative;
+  height:auto;
+  width:80%;
+  margin:100px auto;
+}
+.border{
+  position:relative;
+  height:200px;
+  width:400px;
+  display:inline-block;
+  border: 4px solid hsl(0,0%,20%);
+  background-clip: padding-box;
+  padding: 10px;
+  box-shadow: 0 3px 9px black;
+  font-family: 'Noto Sans', sans-serif;
+}
+.border img{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+.border::after{
+  position:absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  background: linear-gradient(yellow, black);
+  content: '';
+  z-index: -1;
+}
+.border.agreement{
+  margin-left:10%;
+}
+.border.issue{
+  margin-right:10%;
+  float:right;
+}
+.agreement-content{
+  position:absolute;
+  height:90%;
+  top:10px;
+  width:95%;
+  border:2px solid hsl(0,0%,40%);
+  background: linear-gradient(230deg, hsla(226, 100%, 20%,0.7) 30%,hsla(0, 0%, 10%,0.7) 80%,hsla(0, 0%, 5%,0.7) 95%);
+}
+.border:hover .agreement-content, .border:hover .issue-content {
+  border:2px solid white;
+  box-shadow: -10px  15px 70px black;
+}
+
+.agreement-content h1, .issue-content h1{
+  margin:0 15px;
+  font-family: 'Noto Sans', sans-serif;
+  text-align:center;
+  color:hsl(0,0%,90%);
+}
+
+.issue-content{
+  position:absolute;
+  height:90%;
+  top:10px;
+  border:1px solid blue;
+  width:95%;
+  border:2px solid hsl(0,0%,40%);
+  background: linear-gradient(230deg, hsla(226, 100%, 20%,0.7) 30%,hsla(0, 0%, 10%,0.7) 80%,hsla(0, 0%, 5%,0.7) 95%);
+  cursor:pointer;
+}
+footer{
+  position:relative;
+  width:100%;
+  bottom:0;
+  background: hsl(0,0%,10%);
+}
+.over-footer{
+  margin:0 10%;
+}
+.pseudo-footer-div{
+  position:relative;
+  display:flex;
+  margin:15px 0% 0px;
+}
+.icofont-simple-down{
+  display:none;
+}
+.pseudo-footer-div>li{
+  display:inline-block;
+  text-align: left;
+  margin: 0 auto;
+  font-family: 'Titillium Web', sans-serif;
+  /*border:1px solid green; */
+}
+.footer-logo-VegSec> h1, p{
+  text-align:left;
+}
+.pseudo-footer-div>li ul{
+  list-style-type:none
+}
+.pseudo-footer-div> li ul li{
+  padding:5px 3px;
+  line-height: 20px;
+}
+.pseudo-footer-div> li ul li a{
+  color:hsl(0,0%,60%);
+  text-decoration: none;
+  font-size:21px;
+  padding-right:2px;
+  display: block;
+  padding:5px 0px;
+}
+.pseudo-footer-div> li ul li .main_a{
+  color:hsl(0,0%,90%);
+}
+.pseudo-footer-div h1{
+  font-size:37px;
+  color:white;
+}
+.pseudo-footer-div p{
+  font-size:22px;
+  color:hsl(0,0%,60%);
+}
+.pseudo-footer-div h3{
+  font-size:21px;
+  color:hsl(0,0%,90%);
+  font-weight:400;
+}
+.footer-underline{
+  height:2px;
+  background:linear-gradient(to right,hsl(236, 100%, 28%) 10%, hsl(0,0%,10%) 30%);
+  background-size: 220% 100%;
+  background-position: right bottom;
+}
+@keyframes change-color-a-to-white {
+  0%{
+    color:hsl(0, 0%, 60%);
+  }
+  80%,100%{
+    color:hsl(0,0%,100%);
+  }
+}
+.pseudo-footer-div> li ul li:hover .footer-underline, .pseudo-footer-div li>a:hover{
+  background-position: left bottom;
+  transition:all 1s ease;
+  animation:change-color-a-to-white 1s forwards;
+}
+
+.footer{
+  position:relative;
+  width:100%;
+  bottom:0;
+  height:100px;
+  background: hsl(0,0%,8%);
+}
+.footer ul{
+  margin:20px 10% 0px;
+}
+
+.footer ul>li{
+  color:white;
+  display:inline-block;
+  margin-right: 150px;
+  font-size:24px;
+  font-family: 'Titillium Web', sans-serif;
+}
+.VegSec-map{
+  margin-top:20px;
+}
+.VegSec-map.mb{
+  display:none;
+}
+.VegSec-map.avg{
+  display:none;
+}
+@media only screen and (max-width:1400px){
+  .all-content{
+    position:relative;
+    width:90%;
+  }
+  .border.agreement{
+    margin-left:10%;
+  }
+  .border.issue{
+    margin-right:10%;
+  }
+}
+@media only screen and (max-width:1200px){
+  .all-content{
+    position:relative;
+    width:100%;
+  }
+  .border.agreement{
+    margin-left:5%;
+  }
+  .border.issue{
+    margin-right:5%;
+  }
+  .over-footer{
+    margin:0 10%;
+  }
+
+  .pseudo-footer-div{
+    margin:0;
+    height:450px;
+  }
+  .pseudo-footer-div >li{
+    display: block;
+    height:auto;
+    margin:0 0;
+  }
+  .pseudo-footer-div> li ul li a{
+    font-size:19px;
+    padding:0px 0px;
+  }
+  .pseudo-footer-div .footer-logo-VegSec{
+    margin-left:10%;
+  }
+  .pseudo-footer-div .footer-offer{
+    position:absolute;
+    bottom:15%;
+    left:10%;
+  }
+  .footer-information{
+    position:absolute;
+    top:0;
+    right:10%;
+    max-width:303px;
+  }
+  .pseudo-footer-div> .footer-information ul li {
+    padding:5px 3px;
+}
+  .footer-contact{
+    min-width:303px;
+    position:absolute;
+    top:155px;
+    right:10%;
+  }
+  .VegSec-map.desk{
+    display:none;
+  }
+  .footer-map{
+    position:absolute;
+    bottom:0px;
+    right:10%;
+  }
+  .VegSec-map.avg{
+    display:block;
+  }
+}
+@media only screen and (max-width:1000px){
+  .nav-bar-desk ul>li{
+    padding:5px 25px;
+  }
+  .border{
+    display:block;
+    margin:50px auto;
+  }
+  .all-content{
+    position:relative;
+    width:100%;
+    text-align: center;
+    height:auto;
+  }
+  .border.agreement{
+    margin:50px auto;
+  }
+  .border.issue{
+    display:block;
+    margin:50px auto;
+    float:none;
+  }
+  .over-footer{
+    margin:0 2%;
+  }
+  .pseudo-footer-div{
+    margin:0;
+  }
+  .pseudo-footer-div >li{
+    display: block;
+    height:auto;
+    margin:0 0;
+  }
+  .pseudo-footer-div> li ul li a{
+    font-size:19px;
+    padding:0px 0px;
+  }
+
+  .VegSec-map.desk{
+    display:none;
+  }
+  .VegSec-map.avg{
+    display:block;
+  }
+}
+@media only screen and (max-width:800px){
+  .contact-things{
+    text-align: center;
+  }
+  .contact-things div{
+    float:none;
+    display: inline-block;
+  }
+  .logo-desk{
+    padding-bottom:10px;
+  }
+  .logo-desk h1{
+    margin-left:50px;
+  }
+  .nav-bar-desk{
+    display:none;
+  }
+  .bg-for-navigation{
+    position: relative;
+    font-size:30px;
+    background: hsl(218, 100%, 40%);
+    border-top-left-radius: 20px;
+    display: block;
+  }
+  .icofont-navigation-menu{
+    position:absolute;
+    right:10px;
+    z-index:99;
+    margin-top:-50px;
+  }
+  .nav-bar-mb{
+    height:0px;
+    display:block;
+    float:right;
+    width:90%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+  }
+  .nav-bar-mb.active .all-content{
+    margin-top:100px;
+  }
+  .nav-bar-mb ul{
+    list-style-type:none;
+    background: linear-gradient(to bottom, hsl(218, 100%, 40%),hsl(226, 100%, 20%));
+    display: block;
+    height:0%;
+    width:100%;
+    transform: scaleX(0);
+    float:right;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .nav-bar-mb ul>li:hover{
+    animation:nav-bar-hover 0.6s forwards;
+  }
+  .a_nav_bar{
+    opacity:0;
+  }
+  .nav-bar-mb ul>li:hover a{
+    color:white;
+  }
+  @keyframes nav-bar-hover {
+    100%{
+      background: linear-gradienthsl(236, 100%, 38%);
+    }
+  }
+  .nav-bar-mb ul>li{
+    padding:5px 40px;
+    border-left:1px solid hsl(0,0%,80%);
+    border-right:1px solid hsl(0,0%,80%);
+    text-decoration: none;
+  }
+  .nav-bar-mb ul li>a{
+    font-size:25px;
+    color:hsl(0,0%,80%);
+    text-decoration: none;
+  }
+  .border{
+    margin:80px auto;
+  }
+  .all-content{
+    position:relative;
+    height:auto;
+  }
+  footer{
+    position:relative;
+    margin-top:1px;
+    clear: both;
+  }
+  .icofont-simple-down{
+    display:inline-block;
+    color:white;
+    position:absolute;
+    right:20%;
+    font-size:20px;
+  }
+  .over-footer{
+    margin:0 2%;
+  }
+  .pseudo-footer-div{
+    margin:0;
+    height:auto;
+    display:block;
+  }
+  .pseudo-footer-div >li{
+    display: block;
+    margin:10px auto;
+    text-align:center;
+  }
+  .pseudo-footer-div> li ul li a{
+    font-size:19px;
+    padding:0px 0px;
+  }
+
+  .footer-underline{
+    display:none;
+  }
+  .pseudo-footer-div .footer-logo-VegSec{
+    position:relative;
+    display:block;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .pseudo-footer-div .footer-logo-VegSec h1,p{
+    text-align: center;
+  }
+
+  .pseudo-footer-div> li ul li .main_a{
+    display:inline-block;
+  }
+
+  .pseudo-footer-div .footer-offer{
+    position:relative;
+    bottom:0;
+    left:0;
+    margin:10px auto;
+    height:30px;
+    overflow:hidden;
+  }
+  .pseudo-footer-div .footer-information{
+    max-width:none;
+    position:relative;
+    right:0;
+    height:30px;
+    overflow:hidden;
+  }
+  .pseudo-footer-div> .footer-information ul li {
+    padding:5px 3px;
+  }
+  .pseudo-footer-div .footer-contact{
+    position:relative;
+    top:0;
+    right:0;
+    height:30px;
+    overflow:hidden;
+  }
+  .VegSec-map.desk{
+    display:none;
+  }
+  .footer-map{
+    position:relative;
+    right:0;
+  }
+  .VegSec-map{
+    margin-top:10px;
+    right:0%;
+  }
+  .VegSec-map.avg{
+    display:block;
+    right:0%;
+  }
+  .footer{
+    position: relative;
+  }
+  .footer{
+    position:relative;
+    width:100%;
+    bottom:0;
+    height:auto;
+    background: hsl(0,0%,8%);
+  }
+  .footer ul{
+    margin:20px 0% 0px 5%;
+  }
+
+  .footer ul>li{
+    margin-right:75px;
+    font-size:18px;
+  }
+}
+@media only screen and (max-width:650px){
+  .border{
+    width:300px;
+  }
+  .border.agreement{
+    position:relative;
+    margin:100px auto 0px;
+    text-align: left;
+  }
+  .border.issue{
+    position:relative;
+    margin:100px auto 100px;
+    float:none;
+    display: block;
+    text-align: left;
+  }
+  .all-content{
+    position:relative;
+    height:auto;
+    width:100%;
+    margin:auto auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width:530px){
+  .social-things{
+    display:block;
+    height:105px;
+  }
+  .contact-things div{
+    display:block;
+  }
+  .nav-bar-mb ul li>a{
+    font-size:22px;
+  }
+  .footer ul>li{
+    margin-right:25px;
+    font-size:18px;
+  }
+}
+@media only screen and (max-width:350px){
+  .contact-things div > i{
+    font-size:19px;
+  }
+  .contact-things div > a{
+    font-size:17px;
+  }
+  .border{
+    width:98%;
+  }
+  .border.agreement{
+    position:relative;
+    margin:100px auto 0px;
+  }
+  .border.issue{
+    position:relative;
+    margin:100px auto 100px;
+    float:none;
+    display: block;
+  }
+  .border.agreement h1, .border.issue h1{
+    font-size:25px;
+  }
+  .border.agreement p, .border.issue p{
+    font-size:17px;
+  }
+  .agreement-content, .issue-content{
+    border-radius:10px;
+  }
+  .all-content{
+    position:relative;
+    width:100%;
+    margin:0 auto;
+  }
+  .icofont-simple-down{
+    right:5%;
+    font-size:20px;
+  }
+  .pseudo-footer-div> li ul li a{
+    font-size:17px
+  }
+  .footer-contact{
+    min-width:50px;
+
+  }
+  .VegSec-map.avg{
+    display:none;
+  }
+  .VegSec-map.mb{
+    display:block;
+  }
+  .footer ul>li{
+    font-size:15px;
+  }
+}

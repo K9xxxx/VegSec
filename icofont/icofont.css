@@ -108,6 +108,36 @@ url("./fonts/icofont.woff") format("woff");
   content: "\f00e";
 }
 
+.icofont-brand-nexus:before
+{
+  content: "\e919";
+}
+
+.icofont-curved-double-right:before
+{
+  content: "\ea72";
+}
+
+.icofont-arrow-right:before
+{
+  content: "\ea5d";
+}
+
+.icofont-arrow-left:before
+{
+  content: "\ea5c";
+}
+
+.icofont-fax:before
+{
+  content: "\ef26";
+}
+
+.icofont-wall-clock:before
+{
+  content: "\f022";
+}
+
 .icofont-xs
 {
   font-size: .5em;

@@ -86,7 +86,7 @@ html, body{
   text-decoration: none;
 }
 footer{
-  position:absolute;
+  position:relative;
   width:100%;
   bottom:0;
   background: hsl(0,0%,10%);
@@ -219,7 +219,7 @@ footer{
     position:absolute;
     top:0;
     right:10%;
-    max-width:303px;
+    min-width:303px;
   }
   .pseudo-footer-div> .footer-information ul li {
     padding:5px 3px;
@@ -484,6 +484,10 @@ footer{
     font-size:17px
   }
   .footer-contact{
+    min-width:50px;
+
+  }
+  .footer-information{
     min-width:50px;
 
   }

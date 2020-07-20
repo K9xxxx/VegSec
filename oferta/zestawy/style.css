@@ -90,12 +90,11 @@ html, body{
   position:relative;
   height:auto;
   width:70%;
-  margin:0 auto 100px;
+  margin:20px auto 100px;
 }
 .banner-img{
   position:relative;
   margin:50px auto 10px;
-  border:1px solid red;
   height:300px;
   width:100%;
 }
@@ -244,7 +243,7 @@ html, body{
   width:30%;
   height:200px;
   margin-bottom:50px;
-  border:1px solid red;
+  margin-top:10px;
 }
 .reason-why img{
   object-fit: cover;
