@@ -206,19 +206,7 @@ arrow_down[1].addEventListener('click',()=>{
     }
 });
 
-arrow_down[2].addEventListener('click',()=>{
-  const tl=new TimelineMax();
-    if(div_overfooter[2].classList.contains("active")){
-      tl.to(div_overfooter[2],0.5,{height:"24px"});
-      tl.to(arrow_down[2],0.5,{rotate:360},"-=0.5");
-      div_overfooter[2].classList.remove("active");
-    }
-    else{
-      div_overfooter[2].classList.add("active");
-      tl.to(div_overfooter[2],0.5,{height:"auto"});
-      tl.to(arrow_down[2],0.5,{rotate:180},"-=0.5");
-    }
-});
+
 
 hamburger.addEventListener('click',()=>{
   if(currently==false){
