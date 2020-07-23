@@ -196,6 +196,15 @@ footer{
   bottom:0;
   background: hsl(0,0%,10%);
 }
+.logo-con-foot{
+  position:relative;
+  width:180px;
+  height:180px;
+}
+.logoh-con-foot{
+  text-align: left;
+  color:hsl(0,0%,90%);
+}
 .over-footer{
   margin:0 10%;
 }
@@ -317,7 +326,7 @@ footer{
   }
   .pseudo-footer-div .footer-offer{
     position:absolute;
-    bottom:15%;
+    bottom:2%;
     left:10%;
   }
   .footer-information{
@@ -384,6 +393,12 @@ footer{
   }
 }
 @media only screen and (max-width:800px){
+  .logo-con-foot{
+  margin:0 auto;
+}
+.logoh-con-foot{
+  text-align:center;
+}
   .contact-things{
     text-align: center;
   }
