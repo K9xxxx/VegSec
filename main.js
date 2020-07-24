@@ -26,6 +26,43 @@ let xMark3=document.querySelectorAll('.xmarkcon3')
 
 const moretl=new TimelineMax();
 
+
+$(document).ready(function(){
+  var controller=new ScrollMagic.Controller();
+  var ourScene=new ScrollMagic.Scene({
+    triggerElement: '#aboutid',
+    triggerHook:0.7,
+    reverse:false
+  })
+  .setClassToggle('#aboutid',"fade-in")
+  .addTo(controller);
+
+  var scene2=new ScrollMagic.Scene({
+    triggerElement: '#professionalServiceID',
+    triggerHook:0.7,
+    reverse:false
+  })
+  .setClassToggle('#professionalServiceID',"fade-in2")
+  .addTo(controller);
+
+  var scene3=new ScrollMagic.Scene({
+    triggerElement: '#highClassID',
+    triggerHook:0.7,
+    reverse:false
+  })
+  .setClassToggle('#highClassID',"fade-in2")
+  .addTo(controller);
+
+  var scene4=new ScrollMagic.Scene({
+    triggerElement: '#serviceFixID',
+    triggerHook:0.7,
+    reverse:false
+  })
+  .setClassToggle('#serviceFixID',"fade-in2")
+  .addTo(controller);
+
+})
+
 container.forEach((item, i) => {
   container[i].addEventListener('click',()=>{
     const tlgal=new TimelineMax();

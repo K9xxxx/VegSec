@@ -210,21 +210,29 @@ html, body{
   list-style-type: none;
   color:white;
   text-align: center;
+  margin-bottom:25px;
 }
 .set ul>li{
   margin-top:3px;
   color:hsl(0,0%,60%);
 }
-.set>button{
-  justify-content: center;
-  margin:10px auto 0;
+.set>a{
+  margin:60px auto 0;
+  border:2px solid hsl(226,0%,50%);
   background: darkred;
   width:70%;
   padding: 10px;
   border-radius: 30px;
   color:white;
   outline:none;
-  font-weight:700;
+  font-weight:400;
+  text-decoration:none;
+  transition:all 1s forwards;
+}
+.set>a:hover{
+  box-shadow: 0px 0px 15px black;
+  text-shadow: 0px 0px 5px black;
+  border:2px solid hsl(226,0%,70%);
 }
 .last-description{
   font-family: 'Noto Sans', sans-serif;
@@ -321,7 +329,7 @@ footer{
   height:180px;
 }
 .logoh-con-foot{
-  text-align: left;
+  text-align: center;
   color:hsl(0,0%,90%);
 }
 .over-footer{
@@ -461,7 +469,7 @@ footer{
   .pseudo-footer-div .footer-offer{
     position:absolute;
     bottom:2%;
-    left:10%;
+    left:6%;
   }
   .footer-information{
     position:absolute;

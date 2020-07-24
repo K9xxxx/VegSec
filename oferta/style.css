@@ -213,7 +213,7 @@ footer{
   height:180px;
 }
 .logoh-con-foot{
-  text-align: left;
+  text-align: center;
   color:hsl(0,0%,90%);
 }
 .over-footer{
@@ -362,7 +362,7 @@ footer{
   .pseudo-footer-div .footer-offer{
     position:absolute;
     bottom:2%;
-    left:10%;
+    left:6%;
   }
   .footer-information{
     position:absolute;
