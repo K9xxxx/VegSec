@@ -172,6 +172,7 @@ html, body{
   position:relative;
   margin:100px 20%;
   height:auto;
+  overflow:hidden;
 }
 .about{
   margin:100px 10%;
