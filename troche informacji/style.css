@@ -7,6 +7,23 @@
 html, body{
   background-color: hsl(0,0%,90%);
 }
+.realization{
+  font-family: 'Titillium Web', sans-serif;
+  padding:10px 0px;
+  margin-left:10%;
+}
+.realization p{
+  color:hsl(0,0%,90%);
+  font-size:18px;
+}
+.realization p a{
+  color:hsl(0,0%,90%);
+  text-decoration:none;
+
+}
+.realization p a:hover{
+  color:hsl(0,0%,100%);
+}
 .logo-desk{
   display:inline-block;
   position:relative;
@@ -405,6 +422,12 @@ footer{
   }
 }
 @media only screen and (max-width:800px){
+  .realization{
+    margin-left:5%;
+  }
+  .realization p{
+    text-align:left;
+  }
   .contact-things{
     text-align: center;
   }
