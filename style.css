@@ -7,6 +7,23 @@
 html, body{
   background-color: hsl(0,0%,90%);
 }
+.realization{
+  font-family: 'Titillium Web', sans-serif;
+  padding:10px 0px;
+  margin-left:10%;
+}
+.realization p{
+  color:hsl(0,0%,90%);
+  font-size:18px;
+}
+.realization p a{
+  color:hsl(0,0%,90%);
+  text-decoration:none;
+
+}
+.realization p a:hover{
+  color:hsl(0,0%,100%);
+}
 .logo-desk{
   display:inline-block;
   position:relative;
@@ -138,7 +155,7 @@ html, body{
   width:40%;
   box-shadow:0 0 0px 0 rgba(0,0,0,0.3);
   background-color: transparent;
-  color:linear-gradient(to right: gray 20%, black 80%);
+  color:linear-gradient(to right, gray 20%, black 80%);
   opacity:1;
 }
 .short-news-info:hover{
@@ -220,7 +237,6 @@ html, body{
   height:auto;
   font-family: 'Noto Sans', sans-serif;
   transition: all 1.5s ease-out;
-  padding-bottom:10px;
 }
 .professional-service-img{
   display:inline-block;
@@ -326,7 +342,6 @@ html, body{
   margin-left:4%;
   margin-right:6%;
   margin-top:2%;
-  overflow:visible;
 }
 .service-fix-description article{
   margin-bottom:20px;
@@ -554,6 +569,12 @@ footer{
 
 
 @media only screen and (max-width:800px){
+  .realization{
+    margin-left:5%;
+  }
+  .realization p{
+    text-align:left;
+  }
   .logo-con-foot{
     margin:0 auto;
   }
