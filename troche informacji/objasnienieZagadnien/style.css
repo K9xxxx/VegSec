@@ -14,6 +14,23 @@ html, body{
   font-size:40px;
   width:100%;
 }
+.realization{
+  font-family: 'Titillium Web', sans-serif;
+  padding:10px 0px;
+  margin-left:10%;
+}
+.realization p{
+  color:hsl(0,0%,90%);
+  font-size:18px;
+}
+.realization p a{
+  color:hsl(0,0%,90%);
+  text-decoration:none;
+
+}
+.realization p a:hover{
+  color:hsl(0,0%,100%);
+}
 .logo-con{
   vertical-align: top;
   margin-top:20px;
@@ -413,6 +430,12 @@ footer{
   }
 }
 @media only screen and (max-width:800px){
+  .realization{
+    margin-left:5%;
+  }
+  .realization p{
+    text-align:left;
+  }
   .contact-things{
     text-align: center;
   }
