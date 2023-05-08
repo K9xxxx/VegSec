@@ -367,6 +367,7 @@ html, body{
   animation:change-color-to-white 2.5s forwards;
 }
 footer{
+  padding-top:32px;
   position:relative;
   bottom:0;
   background: hsl(0,0%,10%);
@@ -455,7 +456,7 @@ footer{
   position:relative;
   width:100%;
   bottom:0;
-  height:100px;
+  height:auto;
   background: hsl(0,0%,8%);
 }
 .footer ul{
@@ -821,6 +822,7 @@ footer{
   .social-things{
     display:block;
     height:105px;
+    display:none;
   }
   .contact-things div{
     display:block;
@@ -855,6 +857,7 @@ footer{
   }
   .about p{
     font-size:22px;
+    text-align: center;
   }
 
   .footer ul>li{
