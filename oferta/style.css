@@ -54,7 +54,6 @@ html, body{
   font-family: 'Noto Sans', sans-serif;
   width:100%;
   height:35px;
-  background-color: transparent;
 }
 .contact-things div{
   float:right;
@@ -66,17 +65,15 @@ html, body{
   color:hsl(0, 0%, 0%);
   font-weight: 700;
   text-decoration: none;
+  cursor:pointer;
 }
-.contact-things div>a:hover{
-  color:hsl(226, 100%, 20%);
-  transition:color 1s
-}
+
 .contact-things div> i{
   font-size:25px;
-  color: #3b5897;
+  color:hsl(0,0%,30%);
 }
 .contact-things div .icofont-facebook{
-  color: hsl(221, 44%, 41%);
+  color:hsl(0,0%,30%);
 }
 .nav-bar-mb{
   display:none
@@ -132,7 +129,7 @@ html, body{
   margin-top:50px;
   border-radius:5%;
   border: 4px solid hsl(0,0%,20%);
-  background: linear-gradient(210deg,hsl(0,0%,5%) 10%, hsl(226, 100%, 20%));
+  background: linear-gradient(to top, hsl(218, 100%, 40%),hsl(226, 100%, 20%),hsl(226, 100%, 20%));
   background-clip: padding-box;
   padding: 10px;
   box-shadow: 0 3px 9px black;
@@ -164,9 +161,9 @@ html, body{
   height:90%;
   margin:15px;
   width:auto;
-  border-radius:10%;
+  border-radius:15px;
   border:2px solid hsl(0,0%,40%);
-  background: linear-gradient(230deg, hsl(226, 100%, 20%) 30%,hsl(0, 0%, 10%) 80%,hsl(0, 0%, 5%) 95%);
+  background: linear-gradient(to bottom, hsl(218, 100%, 40%),hsl(226, 100%, 20%),hsl(226, 100%, 20%));
 }
 .border:hover .zestawy-content, .border:hover .indywidualne-content {
   border:2px solid white;
@@ -208,9 +205,9 @@ html, body{
   margin:15px;
   border:1px solid blue;
   width:auto;
-  border-radius:10%;
+  border-radius:15px;
   border:2px solid hsl(0,0%,40%);
-  background: linear-gradient(230deg, hsl(226, 100%, 20%) 30%,hsl(0, 0%, 10%) 80%,hsl(0, 0%, 5%) 95%);
+  background: linear-gradient(to bottom, hsl(218, 100%, 40%),hsl(226, 100%, 20%),hsl(226, 100%, 20%));
 }
 .dostepne-urzadzenia{
   position:absolute;
@@ -219,11 +216,11 @@ html, body{
   margin-left: 5px;
 }
 footer{
-  padding-top: 32px;
   position:relative;
   width:100%;
   bottom:0;
   background: hsl(0,0%,10%);
+  padding-top:8px;
 }
 .logo-con-foot{
   position:relative;
@@ -310,7 +307,7 @@ footer{
   position:relative;
   width:100%;
   bottom:0;
-  height:auto;
+  height:100px;
   background: hsl(0,0%,8%);
 }
 .footer ul{
@@ -340,7 +337,6 @@ footer{
     margin-top:50px;
     border-radius:5%;
     border: 4px solid hsl(0,0%,20%);
-    background: linear-gradient(210deg,hsl(0,0%,5%) 10%, hsl(226, 100%, 20%));
     padding: 10px;
     box-shadow: 0 3px 9px black;
   }
@@ -419,7 +415,6 @@ footer{
     margin-top:50px;
     border-radius:5%;
     border: 4px solid hsl(0,0%,20%);
-    background: linear-gradient(210deg,hsl(0,0%,5%) 10%, hsl(226, 100%, 20%));
     padding: 0px;
     box-shadow: 0 3px 9px black;
   }
@@ -498,7 +493,7 @@ footer{
     position:absolute;
     right:10px;
     z-index:99;
-    margin-top:-65px;
+    margin-top:-50px;
   }
   .nav-bar-mb{
     height:0px;
@@ -669,7 +664,6 @@ footer{
     margin-top:50px;
     border-radius:5%;
     border: 4px solid hsl(0,0%,20%);
-    background: linear-gradient(210deg,hsl(0,0%,5%) 10%, hsl(226, 100%, 20%));
     padding: 0px;
     box-shadow: 0 3px 9px black;
   }
@@ -695,7 +689,7 @@ footer{
 }
 @media only screen and (max-width:530px){
   .social-things{
-    display:none;
+    display:block;
     height:105px;
   }
   .contact-things div{
@@ -738,7 +732,6 @@ footer{
     margin-top:50px;
     border-radius:20px;
     border: 4px solid hsl(0,0%,20%);
-    background: linear-gradient(210deg,hsl(0,0%,5%) 10%, hsl(226, 100%, 20%));
     padding: 0px;
     box-shadow: 0 3px 9px black;
   }
