@@ -54,7 +54,6 @@ html, body{
   font-family: 'Noto Sans', sans-serif;
   width:100%;
   height:35px;
-  background-color: transparent;
 }
 .contact-things div{
   float:right;
@@ -66,17 +65,15 @@ html, body{
   color:hsl(0, 0%, 0%);
   font-weight: 700;
   text-decoration: none;
+  cursor:pointer;
 }
-.contact-things div>a:hover{
-  color:hsl(226, 100%, 20%);
-  transition:color 1s
-}
+
 .contact-things div> i{
   font-size:25px;
-  color:#3b5897;
+  color:hsl(0,0%,30%);
 }
 .contact-things div .icofont-facebook{
-  color: hsl(221, 44%, 41%);
+  color:hsl(0,0%,30%);
 }
 .nav-bar-mb{
   display:none
@@ -258,10 +255,7 @@ html, body{
   font-size:30px;
   color:hsl(0,0%,15%);
 }
-.service-fix-description div, .professional-service-description div,.high-class-description div{
-  background: linear-gradient(to right,black 15%, hsl(0,0%,90%) 40%);
-  height:3px;
-}
+
 .service-fix-description article,.professional-service-description article,.high-class-description article{
   font-size:20px;
   margin-top:10px;
@@ -342,6 +336,7 @@ html, body{
   margin-left:4%;
   margin-right:6%;
   margin-top:2%;
+  padding-bottom:8px;
 }
 .service-fix-description article{
   margin-bottom:20px;
@@ -367,7 +362,7 @@ html, body{
   animation:change-color-to-white 2.5s forwards;
 }
 footer{
-  padding-top:32px;
+  padding-top:8px;
   position:relative;
   bottom:0;
   background: hsl(0,0%,10%);
@@ -456,7 +451,7 @@ footer{
   position:relative;
   width:100%;
   bottom:0;
-  height:auto;
+  height:100px;
   background: hsl(0,0%,8%);
 }
 .footer ul{
@@ -609,7 +604,7 @@ footer{
     position:absolute;
     right:10px;
     z-index:99;
-    margin-top:-65px;
+    margin-top:-50px;
   }
   .nav-bar-mb{
     height:0px;
@@ -822,7 +817,6 @@ footer{
   .social-things{
     display:block;
     height:105px;
-    display:none;
   }
   .contact-things div{
     display:block;
@@ -857,7 +851,6 @@ footer{
   }
   .about p{
     font-size:22px;
-    text-align: center;
   }
 
   .footer ul>li{
