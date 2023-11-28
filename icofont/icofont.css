@@ -1,8 +1,8 @@
 /*! 
 * @package IcoFont 
 * @version 1.0.1 
-* @author IcoFont https://icofont.com 
-* @copyright Copyright (c) 2015 - 2020 IcoFont 
+* @author   
+* @copyright 2023 
 * @license - https://icofont.com/license/
 */
 
@@ -33,9 +33,9 @@ url("./fonts/icofont.woff") format("woff");
   -webkit-font-smoothing: antialiased;
 }
 
-.icofont-simple-down:before
+.icofont-ui-message:before
 {
-  content: "\eab2";
+  content: "\ec67";
 }
 
 .icofont-facebook:before
@@ -43,79 +43,19 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ed37";
 }
 
-.icofont-instagram:before
+.icofont-ui-touch-phone:before
 {
-  content: "\ed46";
+  content: "\ec8a";
 }
 
-.icofont-twitter:before
+.icofont-fax:before
 {
-  content: "\ed7a";
+  content: "\ef26";
 }
 
-.icofont-navigation-menu:before
+.icofont-wall-clock:before
 {
-  content: "\efa2";
-}
-
-.icofont-ui-message:before
-{
-  content: "\ec67";
-}
-
-.icofont-mobile-phone:before
-{
-  content: "\ef9b";
-}
-
-.icofont-simple-right:before
-{
-  content: "\eab8";
-}
-
-.icofont-double-right:before
-{
-  content: "\ea7c";
-}
-
-.icofont-shield-alt:before
-{
-  content: "\e81a";
-}
-
-.icofont-dollar:before
-{
-  content: "\e9d8";
-}
-
-.icofont-like:before
-{
-  content: "\ef6e";
-}
-
-.icofont-film:before
-{
-  content: "\ef28";
-}
-
-.icofont-gears:before
-{
-  content: "\ef3b";
-}
-
-.icofont-tick-mark:before
-{
-  content: "\f00e";
-}
-
-.icofont-brand-nexus:before
-{
-  content: "\e919";
-}
-
-.icofont-curved-double-right:before
-{
-  content: "\ea72";
+  content: "\f022";
 }
 
 .icofont-arrow-right:before
@@ -128,14 +68,79 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ea5c";
 }
 
-.icofont-fax:before
+.icofont-brand-nexus:before
 {
-  content: "\ef26";
+  content: "\e919";
 }
 
-.icofont-wall-clock:before
+.icofont-curved-double-right:before
 {
-  content: "\f022";
+  content: "\ea72";
+}
+
+.icofont-double-right:before
+{
+  content: "\ea7c";
+}
+
+.icofont-double-left:before
+{
+  content: "\ea7b";
+}
+
+.icofont-shield-alt:before
+{
+  content: "\e81a";
+}
+
+.icofont-dollar:before
+{
+  content: "\e9d8";
+}
+
+.icofont-gears:before
+{
+  content: "\ef3b";
+}
+
+.icofont-tick-mark:before
+{
+  content: "\f00e";
+}
+
+.icofont-like:before
+{
+  content: "\ef6e";
+}
+
+.icofont-film:before
+{
+  content: "\ef28";
+}
+
+.icofont-navigation-menu:before
+{
+  content: "\efa2";
+}
+
+[class^="icofont-"].icofont-duotone,
+	[class*=" icofont-"].icofont-duotone
+{
+  position: relative;
+}
+
+[class^="icofont-"].icofont-duotone:before,
+	[class*=" icofont-"].icofont-duotone:before
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+[class^="icofont-"].icofont-duotone:after,
+	[class*=" icofont-"].icofont-duotone:after
+{
+  opacity: 0.4;
 }
 
 .icofont-xs
@@ -360,28 +365,5 @@ url("./fonts/icofont.woff") format("woff");
 .icofont-inverse
 {
   color: #fff;
-}
-
-.sr-only
-{
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.sr-only-focusable:active,
-	.sr-only-focusable:focus
-{
-  clip: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: static;
-  width: auto;
 }
 	
